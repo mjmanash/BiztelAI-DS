@@ -23,7 +23,7 @@ if st.button("Analyze Transcript"):
         try:
             headers = {"x-api-key": api_key}
             response = requests.post(
-                "http://localhost:8000/analyze",
+                "https://biztelai-ds.onrender.com/analyze",
                 json={"transcript_id": transcript_id},
                 headers=headers
             )
